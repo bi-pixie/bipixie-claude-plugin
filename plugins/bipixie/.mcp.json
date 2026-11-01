@@ -5,8 +5,8 @@
       "url": "https://mcp.bipixie.com/mcp"
     },
     "bipixie-local": {
-      "command": "uvx",
-      "args": ["bipixie-mcp==0.10.0"],
+      "command": "uv",
+      "args": ["run", "--locked", "--project", "${CLAUDE_PLUGIN_ROOT}", "bipixie-mcp"],
       "env": {
         "BIPIXIE_MCP_TENANT_ID": "${user_config.tenant_id}",
         "BIPIXIE_MCP_WORKSPACE_NAME": "${user_config.workspace_name}",

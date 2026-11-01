@@ -39,8 +39,10 @@ Microsoft Fabric, and the AI Assistants page is in the item.
 When Claude Code asks, give it your Microsoft Entra tenant ID and the name of the Power BI
 workspace that holds your BI Pixie Dashboard semantic model. With the workload, that is
 the Fabric workspace where you created the BI Pixie item. Claude Code runs the local
-BI Pixie server (`uvx bipixie-mcp==0.10.0`, MIT licensed), which signs you in through the Azure
-CLI, so run `az login` first. You also need `uv` installed. In Claude Code the hosted
+BI Pixie server (the MIT licensed `bipixie-mcp` package, version 0.10.0), which signs you
+in through the Azure CLI, so run `az login` first. You also need `uv` installed. The
+plugin's `uv.lock` fixes the exact version and checksum of every package the server
+installs. In Claude Code the hosted
 connector shows as not connected, because it answers only Claude's own cloud; the local
 server is the Claude Code path.
 

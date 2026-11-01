@@ -1,0 +1,20 @@
+# Pins the local BI Pixie server for Claude Code. uv.lock beside this file holds the exact
+# version, source and hash of every package, and .mcp.json runs it with `uv run --locked`.
+# Raise the bipixie-mcp pin and run `uv lock` together.
+[project]
+name = "bipixie-claude-plugin"
+version = "1.0.0"
+description = "Runs the local BI Pixie server for the BI Pixie for Claude plugin."
+# uv fetches Python 3.13 itself when the computer has neither version.
+requires-python = ">=3.12,<3.14"
+dependencies = ["bipixie-mcp==0.10.0"]
+
+[tool.uv]
+package = false
+# CPython on the three desktop systems only. With the Python range above, this keeps
+# uv.lock under the plugin directory's 256 KiB reading limit.
+environments = [
+    "platform_python_implementation == 'CPython' and sys_platform == 'darwin'",
+    "platform_python_implementation == 'CPython' and sys_platform == 'linux'",
+    "platform_python_implementation == 'CPython' and sys_platform == 'win32'",
+]
