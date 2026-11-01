@@ -6,7 +6,7 @@
     },
     "bipixie-local": {
       "command": "uv",
-      "args": ["run", "--locked", "--project", "${CLAUDE_PLUGIN_ROOT}", "bipixie-mcp"],
+      "args": ["run", "--locked", "--project", "${CLAUDE_PLUGIN_ROOT}", "python", "${CLAUDE_PLUGIN_ROOT}/server/start.py"],
       "env": {
         "BIPIXIE_MCP_TENANT_ID": "${user_config.tenant_id}",
         "BIPIXIE_MCP_WORKSPACE_NAME": "${user_config.workspace_name}",
