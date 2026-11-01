@@ -40,10 +40,9 @@
     "api_app_id": {
       "type": "string",
       "title": "BI Pixie API application ID",
-      "description": "Claude Code only. Lets the local server manage BI Pixie for you. Keep the value given for BI Pixie Cloud and the BI Pixie workload. It is a public application ID, not a password.",
+      "description": "Claude Code only, and optional. It lets the local server manage BI Pixie for you, such as running a benchmark. The value for BI Pixie Cloud and the BI Pixie workload is in the plugin's README. Left empty, the local server still answers questions about your data.",
       "required": false,
-      "sensitive": true,
-      "default": "114a7e20-3796-4ddd-ab99-568a78b7759b"
+      "sensitive": true
     }
   }
 }

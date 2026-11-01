@@ -44,6 +44,11 @@ CLI, so run `az login` first. You also need `uv` installed. In Claude Code the h
 connector shows as not connected, because it answers only Claude's own cloud; the local
 server is the Claude Code path.
 
+Claude Code also asks for the BI Pixie API application ID. It is optional, and it lets the
+local server manage BI Pixie for you, such as running a benchmark. For BI Pixie Cloud and
+the workload, enter `114a7e20-3796-4ddd-ab99-568a78b7759b`. It is a public ID, not a
+password. Left empty, the local server still answers questions about your data.
+
 ## What data it sends
 
 - **The hosted connector** sends your question's tool calls to BI Pixie at
