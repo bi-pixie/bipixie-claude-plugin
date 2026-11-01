@@ -6,13 +6,13 @@
     },
     "bipixie-local": {
       "command": "uvx",
-      "args": ["bipixie-mcp"],
+      "args": ["bipixie-mcp==0.10.0"],
       "env": {
         "BIPIXIE_MCP_TENANT_ID": "${user_config.tenant_id}",
         "BIPIXIE_MCP_WORKSPACE_NAME": "${user_config.workspace_name}",
         "BIPIXIE_MCP_DATASET_NAME": "${user_config.dataset_name}",
         "BIPIXIE_MCP_AUTH_MODE": "azure_cli",
-        "BIPIXIE_MCP_API_APP_ID": "114a7e20-3796-4ddd-ab99-568a78b7759b"
+        "BIPIXIE_MCP_API_APP_ID": "${user_config.api_app_id}"
       }
     }
   }
