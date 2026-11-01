@@ -25,7 +25,9 @@ The plugin connects BI Pixie in one of two ways. Use whichever answers.
 
 In Claude Code the hosted entry may show as not connected, because the hosted connector
 answers only Claude's own cloud. The local server is the Claude Code path. If neither
-answers, say so, and point the person to https://bipixie.com/docs/cloud/mcp-server.
+answers, say so, and point the person to https://bipixie.com/docs/cloud/mcp-server, or, when
+they use the BI Pixie workload in Microsoft Fabric, to
+https://bipixie.com/docs/fabric-workload/ai-assistants/claude.
 
 ## Before writing a query
 

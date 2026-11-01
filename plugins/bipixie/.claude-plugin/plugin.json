@@ -27,7 +27,7 @@
     "workspace_name": {
       "type": "string",
       "title": "BI Pixie workspace",
-      "description": "Claude Code only. The name of the Power BI workspace that holds your BI Pixie Dashboard semantic model.",
+      "description": "Claude Code only. The name of the Power BI workspace that holds your BI Pixie Dashboard semantic model. With the BI Pixie workload, it is the Fabric workspace where you created the BI Pixie item.",
       "required": false
     },
     "dataset_name": {

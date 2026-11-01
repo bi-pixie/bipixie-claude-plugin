@@ -10,8 +10,11 @@ BI Pixie plan, Free included.
 
 ## What you need
 
-- A BI Pixie account, at https://app.bipixie.com. BI Pixie records how people use the
-  reports built on your semantic models.
+- BI Pixie, in either of its two versions. BI Pixie records how people use the reports
+  built on your semantic models.
+  - **BI Pixie Cloud**, at https://app.bipixie.com.
+  - **The BI Pixie workload in Microsoft Fabric**, with a BI Pixie item in one of your
+    Fabric workspaces. You do not need a BI Pixie Cloud account.
 - Access in Power BI to the semantic models you want Claude to read. Claude reads and
   queries them as you, with your row-level security.
 
@@ -21,6 +24,11 @@ BI Pixie plan, Free included.
 BI Pixie connector when Claude asks, and sign in with your work account. Ask a question
 such as "What was revenue by region last quarter in the Sales semantic model?"
 
+The **Use BI Pixie in Claude** card on the AI Assistants page shows the connector address
+for your account, in case Claude asks for one. In BI Pixie Cloud, the AI Assistants page is
+in the portal at https://app.bipixie.com. With the workload, open your BI Pixie item in
+Microsoft Fabric, and the AI Assistants page is in the item.
+
 **Claude Code.** Install the plugin with these two commands:
 
 ```
@@ -29,7 +37,8 @@ such as "What was revenue by region last quarter in the Sales semantic model?"
 ```
 
 When Claude Code asks, give it your Microsoft Entra tenant ID and the name of the Power BI
-workspace that holds your BI Pixie Dashboard semantic model. Claude Code runs the local
+workspace that holds your BI Pixie Dashboard semantic model. With the workload, that is
+the Fabric workspace where you created the BI Pixie item. Claude Code runs the local
 BI Pixie server (`uvx bipixie-mcp`, MIT licensed), which signs you in through the Azure
 CLI, so run `az login` first. You also need `uv` installed. In Claude Code the hosted
 connector shows as not connected, because it answers only Claude's own cloud; the local
@@ -49,7 +58,9 @@ server is the Claude Code path.
   you agree.
 
 Privacy policy: https://bipixie.com/privacy. Terms: https://bipixie.com/terms-of-service.
-Documentation: https://bipixie.com/docs/cloud/ai-assistants/claude. Support: https://bipixie.com/support.
+Documentation for BI Pixie Cloud: https://bipixie.com/docs/cloud/ai-assistants/claude.
+Documentation for the workload: https://bipixie.com/docs/fabric-workload/ai-assistants/claude.
+Support: https://bipixie.com/support.
 
 ## License
 
