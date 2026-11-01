@@ -1,0 +1,17 @@
+{
+  "name": "bipixie",
+  "owner": {
+    "name": "DataChant",
+    "email": "support@bipixie.com"
+  },
+  "metadata": {
+    "description": "BI Pixie plugins for Claude."
+  },
+  "plugins": [
+    {
+      "name": "bipixie",
+      "source": "./plugins/bipixie",
+      "description": "A skill that helps Claude read a Power BI semantic model with BI Pixie, paired with the BI Pixie connector."
+    }
+  ]
+}

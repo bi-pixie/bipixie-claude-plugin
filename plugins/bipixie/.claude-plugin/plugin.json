@@ -1,0 +1,41 @@
+{
+  "name": "bipixie",
+  "displayName": "BI Pixie for Claude",
+  "version": "1.0.0",
+  "description": "A skill that helps Claude read a Power BI semantic model with BI Pixie, paired with the BI Pixie connector.",
+  "author": {
+    "name": "DataChant",
+    "email": "support@bipixie.com",
+    "url": "https://bipixie.com"
+  },
+  "homepage": "https://bipixie.com",
+  "repository": "https://github.com/bi-pixie/bipixie-claude-plugin",
+  "license": "MIT",
+  "keywords": ["power-bi", "fabric", "semantic-model", "dax", "analytics", "ai-readiness"],
+  "icon": "./icon.png",
+  "documentationUrl": "https://bipixie.com/docs/cloud/ai-assistants/claude",
+  "supportUrl": "https://bipixie.com/support",
+  "privacyPolicyUrl": "https://bipixie.com/privacy",
+  "termsOfServiceUrl": "https://bipixie.com/terms-of-service",
+  "userConfig": {
+    "tenant_id": {
+      "type": "string",
+      "title": "Microsoft Entra tenant ID",
+      "description": "Claude Code only. The ID of the Microsoft Entra tenant you sign in to Power BI with. Claude in the browser and Claude Desktop use the hosted BI Pixie connector and do not need it.",
+      "required": false
+    },
+    "workspace_name": {
+      "type": "string",
+      "title": "BI Pixie workspace",
+      "description": "Claude Code only. The name of the Power BI workspace that holds your BI Pixie Dashboard semantic model.",
+      "required": false
+    },
+    "dataset_name": {
+      "type": "string",
+      "title": "BI Pixie Dashboard semantic model",
+      "description": "Claude Code only. The name of your BI Pixie Dashboard semantic model, if you renamed it.",
+      "required": false,
+      "default": "BI Pixie Dashboard"
+    }
+  }
+}
